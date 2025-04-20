@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./mode-toggle"
 import { Menu, X } from "lucide-react"
-import { useMobile } from "@/hooks/use-mobile"
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -21,8 +20,26 @@ const navItems = [
 
 export default function Navbar() {
   const pathname = usePathname()
-  const isMobile = useMobile()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Check if mobile on mount and when window resizes
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    // Initial check
+    checkIfMobile()
+
+    // Add event listener
+    window.addEventListener("resize", checkIfMobile)
+
+    // Clean up
+    return () => {
+      window.removeEventListener("resize", checkIfMobile)
+    }
+  }, [])
 
   // Close mobile menu when path changes
   useEffect(() => {
@@ -44,32 +61,15 @@ export default function Navbar() {
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
             </div>
-            {isMenuOpen && (
-              <div className="absolute top-16 left-0 right-0 bg-background border-b z-50">
-                <nav className="flex flex-col p-4">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.path}
-                      href={item.path}
-                      className={`px-4 py-2 ${
-                        pathname === item.path ? "font-medium text-primary" : "text-muted-foreground hover:text-primary"
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </nav>
-              </div>
-            )}
           </>
         ) : (
-          <div className="flex items-center gap-6 overflow-x-auto md:overflow-visible">
+          <div className="hidden md:flex items-center gap-6">
             <nav className="flex items-center gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`text-sm font-medium transition-colors whitespace-nowrap ${
+                  className={`text-sm font-medium transition-colors ${
                     pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
                   }`}
                 >
@@ -81,6 +81,25 @@ export default function Navbar() {
           </div>
         )}
       </div>
+
+      {/* Mobile menu dropdown - separate from header to ensure proper layout */}
+      {isMobile && isMenuOpen && (
+        <div className="fixed inset-x-0 top-16 bg-background border-b z-40 max-h-[calc(100vh-4rem)] overflow-hidden">
+          <nav className="flex flex-col w-full">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`px-6 py-3 border-b border-border last:border-0 ${
+                  pathname === item.path ? "bg-muted font-medium text-primary" : "text-foreground hover:bg-muted/50"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   )
 }

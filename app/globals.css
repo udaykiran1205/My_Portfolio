@@ -55,10 +55,18 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+
+  /* Prevent horizontal scrolling */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
-/* Fix for mobile navigation */
+/* Mobile navigation styles */
 @media (max-width: 767px) {
   .container {
     width: 100%;
