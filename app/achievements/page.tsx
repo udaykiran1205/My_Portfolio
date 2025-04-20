@@ -42,13 +42,26 @@ export default function AchievementsPage() {
               <li className="flex items-start gap-3">
                 <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium">Solved 100+ problems in LeetCode</p>
+                  <p className="font-medium">
+                    Solved 100+ problems in{" "}
+                    <a href="https://leetcode.com/u/udaykiran1205/" className="text-primary hover:underline">
+                      LeetCode
+                    </a>
+                  </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium">Solved 100+ problems in GeeksforGeeks</p>
+                  <p className="font-medium">
+                    Solved 100+ problems in{" "}
+                    <a
+                      href="https://www.geeksforgeeks.org/user/udaykiran1205/"
+                      className="text-primary hover:underline"
+                    >
+                      GeeksforGeeks
+                    </a>
+                  </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

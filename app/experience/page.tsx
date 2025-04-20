@@ -21,16 +21,20 @@ export default function ExperiencePage() {
               provided practical knowledge in building Android applications using industry-standard tools and best
               practices.
             </p>
-            <div className="mt-4 space-y-2">
-              <h3 className="font-semibold">Key Responsibilities:</h3>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Developed Android applications using Java/Kotlin</li>
-                <li>Implemented responsive UI designs</li>
-                <li>Worked with Android SDK and related technologies</li>
-                <li>Collaborated with team members on project development</li>
-                <li>Learned about app deployment and maintenance</li>
-              </ul>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center gap-4">
+            <Briefcase className="h-8 w-8 text-primary" />
+            <div>
+              <CardTitle>AWS-AIML VIRTUAL INTERSHIP</CardTitle>
+              <CardDescription>AICTE</CardDescription>
             </div>
+          </CardHeader>
+          <CardContent>
+            <p>
+              Exploring the captivating world of machine learning concepts and algorithms has been a profound journey of fascination and learning for me. From understanding the fundamental principles to delving into intricate algorithms, each discovery has ignited my passion for unraveling the mysteries of artificial intelligence.
+            </p>
           </CardContent>
         </Card>
       </div>

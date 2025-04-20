@@ -63,13 +63,13 @@ export default function Navbar() {
             )}
           </>
         ) : (
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 overflow-x-auto md:overflow-visible">
             <nav className="flex items-center gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`text-sm font-medium transition-colors whitespace-nowrap ${
                     pathname === item.path ? "text-primary" : "text-muted-foreground hover:text-primary"
                   }`}
                 >

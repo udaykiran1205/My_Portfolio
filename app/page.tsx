@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Download, Github, Linkedin } from "lucide-react"
+import { ArrowRight, Github, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,7 +11,7 @@ export default function Home() {
       <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12">
         <div className="md:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I'm <span className="text-primary">Uday Kiran Pillala</span>
+            Hi, I&apos;m <span className="text-primary">Uday Kiran Pillala</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">AI & Data Science Student</h2>
           <p className="text-lg mb-6">
@@ -24,11 +24,6 @@ export default function Home() {
               <Link href="/contact">
                 Contact Me <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="/resume.pdf" download="Uday_Kiran_Pillala_Resume.pdf">
-                Download CV <Download className="ml-2 h-4 w-4" />
-              </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="https://github.com/udaykiran1205" target="_blank" rel="noopener noreferrer">

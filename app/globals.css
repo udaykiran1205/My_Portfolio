@@ -57,3 +57,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Fix for mobile navigation */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

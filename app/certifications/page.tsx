@@ -5,25 +5,31 @@ export default function CertificationsPage() {
   const certifications = [
     {
       category: "Programming",
-      items: ["Python (Basic)", "Programming Essentials in C", "Programming in Modern C++", "Database Foundations"],
+      items: [
+        "Python (Basic) by Hackerrank",
+        "Programming Essentials in C by Cisco netacd",
+        "Programming in Modern C++ by NPTEL",
+        "Foundations of R Software by NPTEL",
+        "Database Foundations by Oracle Academy",
+      ],
     },
     {
       category: "Artificial Intelligence & Machine Learning",
       items: [
-        "Machine Learning with Python",
-        "Introduction to Artificial Intelligence (AI)",
-        "Introduction to Deep Learning (DL)",
-        "Introduction to Natural Language Processing (NLP)",
+        "Machine Learning with Python by Edx",
+        "Introduction to Artificial Intelligence (AI) by Infosys SpringBoard",
+        "Introduction to Deep Learning (DL) by Infosys SpringBoard",
+        "Introduction to Natural Language Processing (NLP) by Infosys SpringBoard",
         "Neural Networks and Deep Learning offered by Coursera",
       ],
     },
     {
-      category: "Other Technical Skills",
+      category: "Networking & Cybersecurity Certifications",
       items: [
-        "Foundations of R Software",
-        "CCNAv7: Introduction to Networks",
-        "Cybersecurity Essentials",
-        "Linux Essentials",
+        "CCNAv7: Introduction to Networks by Cisco netacd",
+        "Cybersecurity Essentials by Cisco netacd",
+        "Linux Essentials by Cisco netacd",
+        "Ethical Hacker by Cisco netacd",
       ],
     },
   ]

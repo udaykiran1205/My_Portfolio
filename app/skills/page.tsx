@@ -8,15 +8,22 @@ export default function SkillsPage() {
     { name: "Java", level: 85 },
     { name: "C", level: 80 },
     { name: "SQL", level: 75 },
+    {name : "R", level: 85},
     { name: "DSA with Python", level: 85 },
   ]
-
+  const AIML = [
+  { name: "AI", level: 80 },
+  { name: "Machine Learning", level: 85 },
+  { name: "Deep Learning", level: 80 },
+  { name: "NLP", level: 75 },
+  ]
   const webDevSkills = [
     { name: "HTML", level: 95 },
     { name: "CSS", level: 90 },
     { name: "JavaScript", level: 85 },
     { name: "TypeScript", level: 75 },
     { name: "React.js", level: 80 },
+    { name: "Git", level: 80 },
   ]
 
   const toolsSkills = [
@@ -24,7 +31,7 @@ export default function SkillsPage() {
     { name: "Google Colab", level: 90 },
     { name: "Jupyter Notebook", level: 85 },
     { name: "Github", level: 80 },
-    { name: "Netlify", level: 75 },
+    
   ]
 
   const softSkills = [
@@ -67,6 +74,26 @@ export default function SkillsPage() {
           <CardContent>
             <div className="space-y-4">
               {webDevSkills.map((skill, index) => (
+                <div key={index}>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">{skill.name}</span>
+                    <span className="text-muted-foreground">{skill.level}%</span>
+                  </div>
+                  <Progress value={skill.level} className="h-2" />
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center gap-4">
+            <Code className="h-6 w-6 text-primary" />
+            <CardTitle>AI&ML</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {AIML.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">{skill.name}</span>
