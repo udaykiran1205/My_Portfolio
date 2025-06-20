@@ -33,7 +33,7 @@ export default function ExperiencePage() {
           </CardHeader>
           <CardContent>
             <p>
-              Exploring the captivating world of machine learning concepts and algorithms has been a profound journey of fascination and learning for me. From understanding the fundamental principles to delving into intricate algorithms, each discovery has ignited my passion for unraveling the mysteries of artificial intelligence.
+             Gained foundational knowledge in supervised and unsupervised learning, model evaluation, and data preprocessing.
             </p>
           </CardContent>
         </Card>
