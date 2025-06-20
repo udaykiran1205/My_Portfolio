@@ -9,8 +9,8 @@ export default function ProjectsPage() {
       title: "Personal Portfolio Website",
       description:
         "A modern and responsive website serves as a digital resume, showcasing my projects, skills, and experience in an interactive and visually appealing manner.",
-      techStack: ["React.js", "JSON"],
-      githubLink: "https://github.com/udaykiran1205",
+      techStack: ["React.js", "JSON", "TypeScript"],
+      githubLink: "https://github.com/udaykiran1205/My_Portfolio",
     },
     {
       title: "Fido Based Password Less Authentication For E-Bikes",
@@ -24,14 +24,16 @@ export default function ProjectsPage() {
         "Implemented a phishing website detection system using the Random Forest model, enhancing cybersecurity by accurately identifying malicious sites.",
       techStack: ["Python", "Random Forest model"],
       type: "Mini Project",
+      githubLink: "https://github.com/udaykiran1205/Phishing_detection",
+      demoLink: "https://phishing-detection1.onrender.com/",
     },
     {
-      title: "Inwood E-Commerce Website Clone",
+      title: "Phishing Url Blocker",
       description:
-        "Developed a responsive Inwood E-Commerce website clone using modern web technologies, ensuring a seamless user experience across devices.",
-      techStack: ["HTML", "CSS", "JavaScript"],
+        "Developed a browser extension that proactively blocks access to phishing websites in real-time.",
+      techStack: ["JavaScript", "HTML", "CSS", "Chrome Extension APIs", "Random Forest", "Flask (backend)"],
       type: "Individual Project",
-      githubLink: "https://github.com/udaykiran1205/Inwood-Ecommerce-Website-clone",
+      githubLink: "https://github.com/udaykiran1205/Phishing_Url_Blocker_extension",
     },
   ]
 
