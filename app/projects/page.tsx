@@ -22,7 +22,7 @@ export default function ProjectsPage() {
       title: "Phishing Website Detection Using a Random Forest Model",
       description:
         "Implemented a phishing website detection system using the Random Forest model, enhancing cybersecurity by accurately identifying malicious sites.",
-      techStack: ["Python", "Random Forest model"],
+      techStack: ["Python", "Random Forest model","Flask"],
       type: "Mini Project",
       githubLink: "https://github.com/udaykiran1205/Phishing_detection",
       demoLink: "https://phishing-detection1.onrender.com/",
