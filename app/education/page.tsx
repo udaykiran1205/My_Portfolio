@@ -19,7 +19,7 @@ export default function EducationPage() {
             <h3 className="font-semibold">Velagapudi Ramakrishna Siddhartha Engineering College</h3>
             <p className="text-muted-foreground mb-2">Vijayawada, India</p>
             <div className="mt-4 bg-muted p-4 rounded-lg">
-              <p className="font-medium">GPA: 9.16/10.0</p>
+              <p className="font-medium">GPA: 9.06/10.0</p>
             </div>
           </CardContent>
         </Card>
@@ -52,6 +52,9 @@ export default function EducationPage() {
           <CardContent>
             <h3 className="font-semibold">Nagarjuna E.M High School</h3>
             <p className="text-muted-foreground mb-2">Tiruvuru, India</p>
+             <div className="mt-4 bg-muted p-4 rounded-lg">
+              <p className="font-medium">Percentage: 97.5%</p>
+            </div>
           </CardContent>
         </Card>
       </div>
