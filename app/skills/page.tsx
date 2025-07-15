@@ -9,7 +9,6 @@ export default function SkillsPage() {
     { name: "C", level: 80 },
     { name: "SQL", level: 75 },
     {name : "R", level: 85},
-    { name: "DSA with Python", level: 85 },
   ]
   const AIML = [
   { name: "AI", level: 80 },
