@@ -6,21 +6,22 @@ export default function CertificationsPage() {
     {
       category: "Programming",
       items: [
-        "Python (Basic) by Hackerrank",
+       "Database Foundations by Oracle Academy",
         "Programming Essentials in C by Cisco netacd",
         "Programming in Modern C++ by NPTEL",
         "Foundations of R Software by NPTEL",
-        "Database Foundations by Oracle Academy",
+        
       ],
     },
     {
       category: "Artificial Intelligence & Machine Learning",
       items: [
+        "Neural Networks and Deep Learning offered by Coursera",
         "Machine Learning with Python by Edx",
         "Introduction to Artificial Intelligence (AI) by Infosys SpringBoard",
         "Introduction to Deep Learning (DL) by Infosys SpringBoard",
         "Introduction to Natural Language Processing (NLP) by Infosys SpringBoard",
-        "Neural Networks and Deep Learning offered by Coursera",
+        
       ],
     },
     {
@@ -28,8 +29,7 @@ export default function CertificationsPage() {
       items: [
         "CCNAv7: Introduction to Networks by Cisco netacd",
         "Cybersecurity Essentials by Cisco netacd",
-        "Linux Essentials by Cisco netacd",
-        "Ethical Hacker by Cisco netacd",
+        
       ],
     },
   ]
