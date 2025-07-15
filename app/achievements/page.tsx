@@ -24,15 +24,23 @@ export default function AchievementsPage() {
               <li className="flex items-start gap-3">
                 <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium">Achieved 7027 rank in AP EAPCET 2022</p>
-                  <p className="text-muted-foreground">Among Lakhs of candidates</p>
+                  <p className="font-medium">MSME IDEA HACKATHON 4.0 Youth Winner for the project entitled : Fido Based Passwordless Authentication
+For E-Bikes</p>
+                  <p className="text-muted-foreground">with a grant of Rs 6 lakhs</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Star className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-medium">North South Foundation (NSF) merit Scholarship Scholar </p>
+                  <p className="text-muted-foreground">for the academic year 2022-2026</p>
                 </div>
               </li>
             </ul>
           </CardContent>
         </Card>
 
-        <Card>
+{/*         <Card>
           <CardHeader className="flex flex-row items-center gap-4">
             <Medal className="h-6 w-6 text-primary" />
             <CardTitle>Coding Achievements</CardTitle>
@@ -73,7 +81,7 @@ export default function AchievementsPage() {
             </ul>
           </CardContent>
         </Card>
-
+ */}
         <Card className="md:col-span-2">
           <CardHeader className="flex flex-row items-center gap-4">
             <Award className="h-6 w-6 text-primary" />
