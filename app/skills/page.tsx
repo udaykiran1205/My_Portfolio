@@ -168,7 +168,7 @@ export default function SkillsPage() {
                 <div key={index}>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
+                    {/* <span className="text-muted-foreground">{skill.level}%</span> */}
                   </div>
                   {/* <Progress value={skill.level} className="h-2" /> */}
                 </div>
