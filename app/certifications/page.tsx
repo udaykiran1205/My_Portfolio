@@ -4,11 +4,18 @@ import { Award, CheckCircle } from "lucide-react"
 export default function CertificationsPage() {
   const certifications = [
     {
+      category: "Global Certification",
+      items: [
+      "Certified System Administrator by ServiceNow ",
+        "Certified Application Developer by ServiceNow",
+      ],
+    },
+    {
       category: "Programming",
       items: [
        "Database Foundations by Oracle Academy",
         "Programming Essentials in C by Cisco netacd",
-        "Programming in Modern C++ by NPTEL",
+        // "Programming in Modern C++ by NPTEL",
         "Foundations of R Software by NPTEL",
         
       ],
