@@ -27,13 +27,13 @@ export default function ExperiencePage() {
           <CardHeader className="flex flex-row items-center gap-4">
             <Briefcase className="h-8 w-8 text-primary" />
             <div>
-              <CardTitle>AWS-AIML VIRTUAL INTERSHIP</CardTitle>
+              <CardTitle>Google-AIML VIRTUAL INTERSHIP</CardTitle>
               <CardDescription>AICTE</CardDescription>
             </div>
           </CardHeader>
           <CardContent>
             <p>
-             Gained foundational knowledge in supervised and unsupervised learning, model evaluation, and data preprocessing.
+            Gained foundational knowledge in supervised and unsupervised learning, model evaluation, and data preprocessing.
             </p>
           </CardContent>
         </Card>
