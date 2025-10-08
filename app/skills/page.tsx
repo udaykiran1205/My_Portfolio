@@ -9,6 +9,7 @@ export default function SkillsPage() {
     { name: "C", level: 80 },
     { name: "SQL", level: 75 },
     {name : "R", level: 85},
+    
   ]
   const AIML = [
   { name: "AI", level: 80 },
@@ -22,6 +23,7 @@ export default function SkillsPage() {
     { name: "JavaScript", level: 85 },
     { name: "TypeScript", level: 75 },
     { name: "React.js", level: 80 },
+    {name : "Node.js", level : 75},
     { name: "Git", level: 80 },
   ]
 
@@ -38,6 +40,16 @@ export default function SkillsPage() {
     { name: "Time Management", level: 85 },
     { name: "Teamwork", level: 90 },
     { name: "Critical Thinking", level: 85 },
+  ]
+  const relevantCourses = [
+//     Data Structures and Algorithms, Operating Systems, DBMS, Computer Networks, Software
+// Engineering, Hadoop
+    {name: "Data Structures and Algorithms"},
+    {name: "Operating Systems"},
+    {name: "DBMS"},
+    {name: "Computer Networks"},
+    {name: "Software Engineering"},
+    {name: "Hadoop"},
   ]
 
   return (
@@ -139,6 +151,26 @@ export default function SkillsPage() {
                     <span className="text-muted-foreground">{skill.level}%</span>
                   </div>
                   <Progress value={skill.level} className="h-2" />
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+         <Card>
+          <CardHeader className="flex flex-row items-center gap-4">
+            <MessageSquare className="h-6 w-6 text-primary" />
+            <CardTitle>Relevant Courses</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {relevantCourses.map((skill, index) => (
+                <div key={index}>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">{skill.name}</span>
+                    {/* <span className="text-muted-foreground">{skill.level}%</span> */}
+                  </div>
+                  {/* <Progress value={skill.level} className="h-2" /> */}
                 </div>
               ))}
             </div>

@@ -53,7 +53,7 @@ export default function EducationPage() {
             <h3 className="font-semibold">Nagarjuna E.M High School</h3>
             <p className="text-muted-foreground mb-2">Tiruvuru, India</p>
              <div className="mt-4 bg-muted p-4 rounded-lg">
-              <p className="font-medium">Percentage: 97.5%</p>
+              <p className="font-medium">Percentage: 98%</p>
             </div>
           </CardContent>
         </Card>
