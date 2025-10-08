@@ -44,12 +44,12 @@ export default function SkillsPage() {
   const relevantCourses = [
 //     Data Structures and Algorithms, Operating Systems, DBMS, Computer Networks, Software
 // Engineering, Hadoop
-    {name: Data Structures and Algorithms},
-    {name: Operating Systems},
-    {name: DBMS},
-    {name: Computer Networks},
-    {name: Software Engineering},
-    {name: Hadoop},
+    {name: "Data Structures and Algorithms"},
+    {name: "Operating Systems"},
+    {name: "DBMS"},
+    {name: "Computer Networks"},
+    {name: "Software Engineering"},
+    {name: "Hadoop"},
   ]
 
   return (
