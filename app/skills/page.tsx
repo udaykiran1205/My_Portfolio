@@ -8,7 +8,6 @@ export default function SkillsPage() {
     { name: "Java", level: 85 },
     { name: "C", level: 80 },
     { name: "SQL", level: 75 },
-    {name : "R", level: 85},
     
   ]
   const AIML = [
@@ -21,7 +20,6 @@ export default function SkillsPage() {
     { name: "HTML", level: 95 },
     { name: "CSS", level: 90 },
     { name: "JavaScript", level: 85 },
-    { name: "TypeScript", level: 75 },
     { name: "React.js", level: 80 },
     {name : "Node.js", level : 75},
     { name: "Git", level: 80 },
@@ -41,16 +39,7 @@ export default function SkillsPage() {
     { name: "Teamwork", level: 90 },
     { name: "Critical Thinking", level: 85 },
   ]
-  const relevantCourses = [
-//     Data Structures and Algorithms, Operating Systems, DBMS, Computer Networks, Software
-// Engineering, Hadoop
-    {name: "Data Structures and Algorithms"},
-    {name: "Operating Systems"},
-    {name: "DBMS"},
-    {name: "Computer Networks"},
-    {name: "Software Engineering"},
-    {name: "Hadoop"},
-  ]
+  
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -157,25 +146,7 @@ export default function SkillsPage() {
           </CardContent>
         </Card>
 
-         <Card>
-          <CardHeader className="flex flex-row items-center gap-4">
-            <MessageSquare className="h-6 w-6 text-primary" />
-            <CardTitle>Relevant Courses</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {relevantCourses.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
-                    {/* <span className="text-muted-foreground">{skill.level}%</span> */}
-                  </div>
-                  {/* <Progress value={skill.level} className="h-2" /> */}
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        
       </div>
     </div>
   )
