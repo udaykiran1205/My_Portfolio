@@ -5,23 +5,17 @@ import { ExternalLink, GithubIcon } from "lucide-react"
 
 export default function ProjectsPage() {
   const projects = [
-    {
-      title: "Personal Portfolio Website",
-      description:
-        "A modern and responsive website serves as a digital resume, showcasing my projects, skills, and experience in an interactive and visually appealing manner.",
-      techStack: ["React.js", "JSON", "TypeScript"],
-      githubLink: "https://github.com/udaykiran1205/My_Portfolio",
-    },
+    
     {
       title: "Fido Based Password Less Authentication For E-Bikes",
-      description: "Enhanced Security for E-Bikes through Password less Authentication Using Fido Technology",
+      description: "Designed and implemented a secure passwordless authentication system using FIDO2/WebAuthn, eliminating traditional passwords and reducing phishing attack surfaces and Built an end-to-end authentication flow supporting credential registration and cryptographic challenge-response login",
       techStack: ["Fido2/WebAuth Protocol"],
       type: "Epics Project",
     },
     {
       title: "Phishing Website Detection Using a Random Forest Model",
       description:
-        "Implemented a phishing website detection system using the Random Forest model, enhancing cybersecurity by accurately identifying malicious sites.",
+        "Engineered a Random Forest–based phishing detection model using 23+ handcrafted URL and domain features and built a custom feature extraction pipeline to analyze lexical, structural, and domain-level attributes of URLs and Improved detection reliability through data preprocessing, feature selection, and model evaluation metrics and deployed the model as a Flask web application on Render, enabling real-time phishing classification.",
       techStack: ["Python", "Random Forest model","Flask"],
       type: "Mini Project",
       githubLink: "https://github.com/udaykiran1205/Phishing_detection",
@@ -30,7 +24,7 @@ export default function ProjectsPage() {
     {
       title: "Phishing Url Blocker",
       description:
-        "Developed a browser extension that proactively blocks access to phishing websites in real-time.",
+        "Developed a real-time Chrome browser extension that blocks malicious URLs before page load, enhancing user security and Integrated a Flask-based ML backend with the extension to perform live phishing predictions.",
       techStack: ["JavaScript", "HTML", "CSS", "Chrome Extension APIs", "Random Forest", "Flask (backend)"],
       type: "Individual Project",
       githubLink: "https://github.com/udaykiran1205/Phishing_Url_Blocker_extension",
