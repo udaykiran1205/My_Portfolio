@@ -11,6 +11,7 @@ export default function ProjectsPage() {
       description: "Designed and implemented a secure passwordless authentication system using FIDO2/WebAuthn, eliminating traditional passwords and reducing phishing attack surfaces and Built an end-to-end authentication flow supporting credential registration and cryptographic challenge-response login",
       techStack: ["Fido2/WebAuth Protocol"],
       type: "Epics Project",
+      githubLink: "https://github.com/udaykiran1205/Phishing_detection",
     },
     {
       title: "Phishing Website Detection Using a Random Forest Model",
