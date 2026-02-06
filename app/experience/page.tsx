@@ -7,7 +7,7 @@ export default function ExperiencePage() {
       <h1 className="text-4xl font-bold mb-8 text-center">Experience</h1>
 
       <div className="max-w-3xl mx-auto">
-        <Card>
+        {/* <Card>
           <CardHeader className="flex flex-row items-center gap-4">
             <Briefcase className="h-8 w-8 text-primary" />
             <div>
@@ -22,7 +22,7 @@ export default function ExperiencePage() {
               practices.
             </p>
           </CardContent>
-        </Card>
+        </Card> */}
         <Card>
           <CardHeader className="flex flex-row items-center gap-4">
             <Briefcase className="h-8 w-8 text-primary" />
@@ -33,7 +33,10 @@ export default function ExperiencePage() {
           </CardHeader>
           <CardContent>
             <p>
-            Gained foundational knowledge in supervised and unsupervised learning, model evaluation, and data preprocessing.
+              <ul>
+                <li> Gained hands-on exposure to machine learning fundamentals, including supervised and unsupervised algorithms.</li>
+                <li> Worked on data preprocessing, feature engineering, and model evaluation workflows. </li>
+              </ul>
             </p>
           </CardContent>
         </Card>
