@@ -12,7 +12,7 @@ export default function EducationPage() {
             <Graduation className="h-8 w-8 text-primary" />
             <div>
               <CardTitle>B.Tech in Artificial Intelligence and Data Science</CardTitle>
-              <p className="text-muted-foreground">2022 - Present</p>
+              <p className="text-muted-foreground">2022 - 2026</p>
             </div>
           </CardHeader>
           <CardContent>
