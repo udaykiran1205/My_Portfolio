@@ -15,8 +15,9 @@ export default function Home() {
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">AI & Data Science Student</h2>
           <p className="text-lg mb-6">
-           Final-year B.Tech Artificial Intelligence and Data Science student  specializing in machine learning, secure authentication systems, and full-stack AI deployment. Strong foundations in DSA, Python, Java with hands-on deployment using Flask and React.
-            
+          B.Tech graduate in Artificial Intelligence & Data Science with hands-on experience in developing web applications,
+REST APIs, and machine learning solutions. Strong skills in AI&ML, JavaScript, Python, React.js, HTML/CSS, and
+problem-solving, with a passion for building reliable and user-focused software.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild>
@@ -50,7 +51,7 @@ export default function Home() {
           <Card>
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Education</h3>
-              <p>B.Tech in AI & Data Science at Velagapudi Ramakrishna Siddhartha Engineering College with 9.16 GPA</p>
+              <p>B.Tech in AI & Data Science at Velagapudi Ramakrishna Siddhartha Engineering College with 8.94 GPA</p>
               <Link href="/education" className="text-primary hover:underline inline-flex items-center mt-4">
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
@@ -60,8 +61,7 @@ export default function Home() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Projects</h3>
               <p>
-                Developed multiple projects including a Portfolio Website, Phishing Detection System, and E-Commerce
-                Clone
+                Developed multiple projects including a FIDO Based Passwordless Authentication, Phishing Detection System, and Smart Road Accident Detection...
               </p>
               <Link href="/projects" className="text-primary hover:underline inline-flex items-center mt-4">
                 Learn more <ArrowRight className="ml-1 h-4 w-4" />
