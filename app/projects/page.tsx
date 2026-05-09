@@ -53,7 +53,7 @@ export default function ProjectsPage() {
             <CardContent className="flex-grow">
              <ul className="list-disc list-inside mb-4 space-y-2">
                {project.description.map((point, pointIndex) => (
-                  <li key={pointIndex} className="text-sm text-gray-700">
+                  <li key={pointIndex} variant="secondary">
                     {point}
                   </li>
                 ))}
