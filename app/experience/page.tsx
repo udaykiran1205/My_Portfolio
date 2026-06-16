@@ -7,22 +7,6 @@ export default function ExperiencePage() {
       <h1 className="text-4xl font-bold mb-8 text-center">Experience</h1>
 
       <div className="max-w-3xl mx-auto">
-        {/* <Card>
-          <CardHeader className="flex flex-row items-center gap-4">
-            <Briefcase className="h-8 w-8 text-primary" />
-            <div>
-              <CardTitle>Google Android Developer Virtual Intern</CardTitle>
-              <CardDescription>AICTE</CardDescription>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <p>
-              Gained hands-on experience in Android app development and modern mobile technologies. This internship
-              provided practical knowledge in building Android applications using industry-standard tools and best
-              practices.
-            </p>
-          </CardContent>
-        </Card> */}
         <Card>
           <CardHeader className="flex flex-row items-center gap-4">
             <Briefcase className="h-8 w-8 text-primary" />
@@ -33,10 +17,34 @@ export default function ExperiencePage() {
           </CardHeader>
           <CardContent>
             <p>
-              <ul>
-                <li> Gained hands-on exposure to machine learning fundamentals, including supervised and unsupervised algorithms.</li>
-                <li> Worked on data preprocessing, feature engineering, and model evaluation workflows. </li>
-              </ul>
+              <ol>
+                <li> Developed an airport runway detection system using the YOLOv8 deep learning model to accurately identify runways from satellite and aerial imagery for autonomous aviation applications.</li>
+                <li> Applied advanced image preprocessing and Region of Interest (RoI) extraction techniques to improve detection performance under challenging weather conditions and visual obstructions. </li>
+                <li>Trained and evaluated the model on a dataset of 880 images, achieving 93.2% detection accuracy with a 6.32% false positive rate, demonstrating reliable runway identification for enhanced aviation safety and automation.</li>
+              
+              </ol>
+              <b>Technologies: </b> Python, YOLOv8, OpenCV, Deep Learning, Computer Vision, Image Processing.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+       <div className="max-w-3xl mx-auto">
+        <Card>
+          <CardHeader className="flex flex-row items-center gap-4">
+            <Briefcase className="h-8 w-8 text-primary" />
+            <div>
+              <CardTitle>AI-Powered Cloud Engineer Virtual Internship</CardTitle>
+              <CardDescription>AICTE</CardDescription>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p>
+              <ol>
+                <li> Developed a serverless subscription management system using AWS services to manage subscriber data and process subscription events efficiently.</li>
+                <li>Automated subscription lifecycle tracking, renewal scheduling, and expiration monitoring through event-driven cloud workflows.</li>
+                <li>Implemented automated email notification services to send renewal reminders and subscription expiration alerts, enhancing user engagement and operational efficiency.</li>
+              </ol>
+              <b>Technologies: </b>AWS Lambda, DynamoDB, API Gateway, EventBridge, Amazon SES, Python.
             </p>
           </CardContent>
         </Card>
