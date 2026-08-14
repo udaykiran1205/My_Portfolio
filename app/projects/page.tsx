@@ -5,7 +5,13 @@ import { ExternalLink, GithubIcon } from "lucide-react"
 
 export default function ProjectsPage() {
   const projects = [
-    
+    {
+      title: "AI-Powered Resume Analyzer & ATS Optimization Platform",
+      description: ["Built a full-stack resume analyzer with PDF/DOCX parsing, ATS scoring, and NLP-based skill-gap extraction,deployed on Vercel (frontend) and Render (backend).","Integrated the Gemini/OpenAI API for AI-generated resume summaries and improvement recommendations,plus downloadable PDF reports and a dark-mode dashboard and connected secure REST APIs to MongoDB Atlas for persistent user and resume data".],
+      techStack: ["React.js", "Node.js", "MongoDB", "NLP", "Gemini/OpenAI API", "Tailwind CSS","REST APIs"],
+      githubLink : "https://github.com/udaykiran1205/RESUME_ANALYZER_AI",
+      demoLink:"https://airesumeanalyzerten.vercel.app/",
+    },
     {
       title: "Fido Based Password Less Authentication For E-Bikes",
       description: ["Designed and implemented a secure passwordless authentication system using FIDO2/WebAuthn, eliminating traditional passwords and reducing phishing attack surfaces.","Built a secure web application implementing passwordless login flows, integrating frontend JavaScript with backend APIs."],
