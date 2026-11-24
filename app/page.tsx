@@ -15,9 +15,10 @@ export default function Home() {
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">AI & Data Science Student</h2>
           <p className="text-lg mb-6">
-          B.Tech graduate in Artificial Intelligence & Data Science with hands-on experience in developing web applications,
-REST APIs, and machine learning solutions. Strong skills in AI&ML, JavaScript, Python, React.js, HTML/CSS, and
-problem-solving, with a passion for building reliable and user-focused software.
+          AI Engineer with hands-on experience developing and deploying Computer Vision, NLP, and real-time
+prediction systems using Python, TensorFlow/Keras, YOLO, OpenCV, and REST APIs. Skilled in building
+end-to-end, scalable AI solutions, integrating LLM APIs, processing data, developing predictive models,
+and deploying production-ready applications.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild>
